@@ -21,6 +21,7 @@ html {
     --grey-lighter : #efefef;
     --grey-dark:#363636;
     --blue:#2797fe;
+    --blue-dark: #083AA9;
     --gap-1 : 0.8rem;
     --gap-2 : 1.6rem;
     --gap-3 : 2.4rem;
@@ -236,5 +237,312 @@ img {
     .hero__right > button {
         width:100%;
         padding:1.6rem;
+    }
+}
+
+
+/* ---------------------*/
+/* ------- INFO ------*/
+/* ---------------------*/
+
+
+.info {
+    display:flex;
+    padding:3.2rem 0rem;
+    /* height:100vh; */
+    background-color: #fff;
+}
+
+.info__left {
+    flex:6;
+    /* background-color:wheat; */
+    padding: 0 2.4rem;
+}
+
+.info__left--img {
+    width:100%;
+    overflow:hidden;
+    margin-bottom:3.2rem;
+}
+
+.info__left--img > img {
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+
+.info__left--text > h1 {
+    font-size: 2.4rem;
+    font-weight:700;
+    margin-bottom:2.4rem;
+}
+
+
+.info__left--text > p  {
+    font-size:1.2rem;
+    font-weight:300;
+    margin-bottom:3.2rem;
+}
+
+.info__left--text > p:last-child  { 
+    font-weight:500;
+    margin-bottom:0;
+}
+
+
+.info__right {
+    flex:4;
+    /* background-color:green; */
+
+    display:flex;
+    flex-direction:column;
+    gap:1px;
+}
+
+
+.info__card {
+    width:100%;
+    /* height:150px; */
+    /* background:grey; */
+    height:auto;
+    border:1px solid var(--grey-lighter);
+    display:flex;
+    padding:1.6rem;
+}
+
+.info__card:hover {
+    background-color: var(--grey-light);
+}
+
+.info__card--img {
+    flex:3.5;
+}
+
+.info__card--img > img {
+    width:100%;
+    height:auto;
+    display:block;
+}
+.info__card--text {
+    background-color:white;
+    flex:6.5;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    /* gap:2px; */
+    /* background-color:currentColor; */
+    background-color:transparent;
+    padding:0 2.2rem;
+}
+
+.info__card--text > h4 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
+.info__card--text > p { 
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.info__card--text > a { 
+    font-size: 1.6rem;
+    font-weight: 300;
+    color:var(--blue);
+    cursor:pointer;
+}
+
+.info__card--text > a:hover {
+    color:var(--blue-dark);
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .info__left {
+        display:none;
+    }
+
+    .info__right {
+        gap:3.2rem;
+    }
+
+    .info__card {
+        flex-direction:column;
+        gap:3.2rem;
+    }
+
+    .info__card--text > h4,.info__card--text > p ,.info__card--text > a {
+        margin-bottom:5px;
+       
+    }
+    
+    
+
+
+    .info__card--text{
+        /* height:100px; */
+        padding:0 1.6rem;
+    }
+
+    .card__img--1 {
+        content : url("./images/information-orientation-mobile.jpg")
+    }
+
+    .card__img--2 {
+        content : url("./images/information-campus-mobile.jpg")
+    }
+
+    .card__img--3 {
+        content : url("./images/information-guest-lecture-mobile.jpg")
+
+    }
+}
+
+
+
+/* ---------------------*/
+/* ------- EXHIBIT ------*/
+/* ---------------------*/
+
+
+.thesis {
+/* background-color:wheat; */
+/* height:90vh; */
+text-align:center;
+padding:3.2rem 0;
+background-color:var(--grey-lighter)
+}
+
+
+.thesis__header {
+    /* padding:3.2rem 0; */
+    background-color:var(--grey-lighter);
+    margin-bottom:3.2rem;
+    font-size:2.4rem;
+    font-weight:500;
+}
+
+
+.thesis__content {
+    display:flex;
+    height:100%;
+
+ 
+}
+
+.thesis__content--left {
+    flex:6;
+    /* background-color:grey; */
+    height:100%;
+    padding:0 2.4rem;
+}
+
+.thesis__vdo{
+    width:100%;
+    overflow:hidden;
+    margin-bottom:2.4rem;
+}
+
+
+.thesis__vdo > video {
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+
+.thesis__text {
+    text-align:left;
+}
+
+
+.thesis__text > h4 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    margin-bottom:0.8rem;
+}
+
+
+.thesis__text > p { 
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.thesis__content--right {
+    flex:4;
+    /* background-color:red; */
+    height:100%;
+}
+
+
+.thesis__card {
+    width:100%;
+    /* height:150px; */
+    /* background:grey; */
+    height:auto;
+    border:1px solid var(--grey-lighter);
+    display:flex;
+    padding:1.6rem;
+}
+
+.thesis__card:hover {
+    background-color: var(--grey-light);
+}
+
+.thesis__card--img {
+    flex:3.5;
+}
+
+.thesis__card--img > img {
+    width:100%;
+    height:auto;
+    display:block;
+}
+.thesis__card--text {
+    background-color:white;
+    flex:6.5;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    /* gap:2px; */
+    /* background-color:currentColor; */
+    background-color:transparent;
+    padding:0 2.2rem;
+}
+
+.thesis__card--text > h4 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
+.thesis__card--text > p { 
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.thesis__card--text > a { 
+    font-size: 1.6rem;
+    font-weight: 300;
+    color:var(--blue);
+    cursor:pointer;
+}
+
+.thesis__card--text > a:hover {
+    color:var(--blue-dark);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .thesis__content--left {
+        padding:0;
+    }
+    .thesis__content--right,.thesis__text {
+        display:none;
     }
 }
